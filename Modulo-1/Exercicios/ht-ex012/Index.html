@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Vídeos com HTML5</title>
+    
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <h2>Video hospedado no meu próprio servidor</h2>
+
+    <p>Este video foi inserido de modo simples e direto, mas pode ser que nāo funcione em alguns navegadores </p>
+
+    <video src="midia/meu-video.mp4" width="560" poster="imagem/limoes-capa.png" controls ></video>
+
+    <p>Este vídeo foi inserido de modo completo para ser lido em praticamente todos os navegadores</p>
+
+    <video width="560" poster="imagem/limoes-capa.png" controls>
+        <source src="midia/meu-video.avi" type="video/avi">
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.mov" type="video/mov">
+        <source src="midia/meu-video.ogv" type="video/ogv">
+        <source src="midia/meu-video.webm" type="video/webm">
+
+    </video>
+        
+    <h1>Inserindo video do YouTube</h1>
+        
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/D5kgj9FHcxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+    <p><strong> Os vídeos do YouTube sāo públicos e nāo tem como publicá-los somente para os seus assinantes</strong></p>
+
+    <h1>Inserindo vídeo do Vimeo</h1>
+    <div style="padding:22.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/197093965?h=7fbc516b5a&color=ffffff" style="position:absolute;top:0;left:0;width:560px;;height:315px;;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <p><strong>Os vídeos do Vime podem ser privados e visualizados apenas pelos assinantes, mas seus planos sāo caros</strong></p>
+
+</body>
+</html>

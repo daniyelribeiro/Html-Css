@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Links-Pasta-2</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+        }
+        a:visited {
+            color: brown;
+        }
+        a:hover {
+            color: aqua;
+            text-decoration: underline;
+        }
+        a:active {
+            color: green;
+        }
+        a::before {
+            content: '⇨';
+        }
+        a::after {
+            content: ' [link]';
+            color: darkgrey;
+        }
+        .especial {
+            background-color: rgb(251, 188, 188);
+        }
+        .especial::before {
+           content: '►';
+        }
+        .especial::after {
+            color: brown;
+            content: '◄' ' [link]';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links pasta 2</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo" class="especial" target="_blank">Canal do Youbube</a></li>
+        <li><a href="https://www.cursoemvideo.com" class="especial" target="_blank">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Tag &lt;code&gt;</h2>
+    <P>O comando document.getElementByID('test') é escrito em linguagem JavaScript.</P>
+    <P>O comando <code>document.getElementByID('test')</code> é escrito em linguagem JavaScript.</P>
+    <p>No primeiro paragrafo foi escrito com fonte normal</p>
+    <p>No segundo paragrafo, document.getElementByID('test'), foi escrito com fonte mono espaçada, usando a tag &lt;code&gt;.</p>
+    <h2>Tag &lt;code&gt;</h2>
+    <p>Vamos dar outro exemplo. Vamos criar um codigo em linguagem python:</p>
+    <code>
+        num = int(input(digite um numero))
+        if num % 2 == 0:
+            print('o número {num} é PAR')
+        else:
+            print('o nümero {num} é ÍIMPAR') 
+        print('fim do programa')     
+    </code>
+    <p>Observe que a tag &lt;code&gt; formata a fonte em monsespaçada mas nāo organiza o texte em indentaçāo</p>
+    <h2>Usando a Tag &lt;pre&gt; para indentaçāo</h2>
+    <pre>
+        <code>
+            num = int(input(digite um numero))
+            if num % 2 == 0:
+                print('o número {num} é PAR')
+            else:
+                print('o nümero {num} é ÍIMPAR')
+            print('fim do programa')
+        </code>
+    </pre>
+    <p>Observe que a tag &lt;pre&gt; organiza o código com indentaçāo</p>
+    <h2>Citações Simples</h2>
+    <p>Como diz o pai de um amigo meu: <q>o computador é um burro muito rápido</q></p>
+    <p>Para citações (entre aspas) simples (curtas), use a tag &lt;q&gt;.</p>
+    <h2>Citações Completas</h2>
+    <p>Para citações completas, que ocupa um bloco, a tag usada é &lt;blockquote&gt;</p>
+    <p>Exemplo:</p>
+    <p>Segundo Aristóteles, <blockquote cite="https://www.pensador.com/autor/aristoteles/7/"> <q> Toda e qualquer fonte de movimento no mundo, seja uma pessoa, seja uma coisa, seja um
+        pensamento, é um “motor movido”. Dessa sorte, o arado move a terra, a mão move o arado, o
+        cérebro move a mão, o desejo de alimento move o cérebro, o instinto da vida move o desejo
+        de alimento, e assim por diante. Em outras palavras, a causa de todo movimento é o resultado
+        de outro movimento qualquer, o amo de todo escravo é escravo de algum outro amo. O
+        próprio tirano é escravo de sua ambição. Deus, no entanto, não pode ser resultado de nenhuma
+        ação. Não pode ser escravo de amo nenhum. É a fonte de toda a ação, o amo de todos os
+        amos, o instigador de todo o pensamento, o “motor não movido do mundo.</q></blockquote> </p>
+        <h2>Abreviações</h2>
+        <p>Estou estudando  <abbr title="HyperText Markup">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> e estou gostando.</p>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <title>Formataçāo de textos</title>
+    <style>
+        mark {
+            background-color: rgb(241, 134, 241);
+        }
+    </style>
+</head>
+<body>
+   <h1>Principais Formatações</h1> 
+   <h2>Negrito ou destaque</h2>
+   <p>Nessa frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt;</p><!--Tag b, nāo semantica-->
+   <p>Nesta outra frase temos um outro<strong> termo em negrito ou em destaque,</strong> como queiram, usando a tag &lt;strong&gt; (semantica).</p>
+   <h2>Itálico / Ênfase</h2>
+   <p></p>Já nesta frase temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (nāo semantica). <!--Para envelopar diferamente tecle shift+command+p e procure abb (wrap with abbreviation)-->
+   <p>Nesta outra frase temos um <em>termo em itálico ou ênfase</em>, usanto a tag &lt;em&gt; (semantica).</p>
+   <h2>Texto Marcado</h2>
+   <p>Podemos criar trambem um <mark>texto marcado</mark> com a tag &lt;mark&gt;.</p><!--A tag <mark> nāo é reconhecida oficialmente'-->
+    <p>Se usarmos apenas a tag &lt;mark&gt; o texto marcado aparecerá em <mark>amarelo</mark></p>, mas se quisermos mudar a côr do marca texto é só usar Css. Por exemplo: vou usar <mark>um texto marcado em verde limāo</mark>, usando o parâmetro style background-color.
+    <p>Se quisermos que  a cor dos textos marcados sejam todos de uma mesma cor é só criar uma tag &lt;style&gt; no cabeçalho e crio um seletor dentro de style usando background-color
+    </p>
+    <h2>Texto Grande e Pequeno</h2>
+    <p>Estamos criando um texto com <big>letras grandes</big> e com <small>letras pequenas</small> neste parágrafo. Usando as tags &lt;big&gt; e &lt;small&gt;</p><!--O big esta de vermelho porque já está obsoleto.-->
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas nāo considerado, usando a tag &lt;del&gt;</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar u<ins>m texto como inserido</ins> para dar uma ênfase, e indicar que ele foi aciocionado depois, usando a tag &lt;ins&gt;.</p>
+    <p>Existe tambem o <u>texto sublinhado</u> com a tag &lt;u&gt;, que  é igual a tag &lt;ins&gt;, porém u nāo é semantica</p>
+    <h2>Texto Sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>2</sup>+3, usando a tag &lt;sup&gt;.</p>
+    <h2>Texto Subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O, usando a tag &lt;sub&gt;.</p>
+</body>    
+</html>
