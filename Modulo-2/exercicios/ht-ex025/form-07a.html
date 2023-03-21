@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            padding: 30px;
+        }
+        #pri {
+            padding: 20px;
+        }
+        #seg {
+            padding: 20px;
+        }
+        div {
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulários</h1>
+
+        <div id="pri">
+            <form action="cadastro.php" method="post" autocomplete="on">
+            
+                <label for="iest">Estado</label>
+                    <select name= "estado" id="iest">
+                       <option value="" selected>--- Escolha ---</option>
+                        <optgroup label="Região Sudeste"></option>
+                        <option value="ES">Espirito Santo</option>
+                        <option value= "MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value= "sp"> São Paulo</option>
+                        </optgroup>
+                        <optgroup label= "Região Sul">
+                        <option value= "PR">Paraná</option>
+                        <option value="RN">Rio Grande do Sul</option>
+                        <option value="SC">Santa Catarina</option>
+                        </optgroup>
+                    </select>
+            
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            
+            </form>
+        </div>
+
+        <div id="seg">
+            <form action="cadastro.php" method="post" autocomplete="on"></form>
+            
+                <label for="iest">Estado</label>
+                    <select name= "estado" id="iest">
+                        <option value="" selected>--- Escolha ---</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AM">AM</option>
+                        <option value="AP">AP</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <OPtion value="DF">DF</OPtion>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <OPtion value="MG">MG</OPtion>
+                        <option value="MS">MS</option>
+                        <option value="MT">MT</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <OPtion value="PR">PR</OPtion>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <OPtion value="RS">RS</OPtion>
+                        <option value="SC">SC</option>
+                        <option value="SE">SE</option>
+                        <option value="SP">SP</option>
+                        <OPtion value="TO">TO</OPtion>
+                        </optgroup>
+                     </select>
+                    <p>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </p>
+                    
+           
+            
+            </form>
+        </div>
+        <div>
+            <form action="cadastro.php" method="get" autocomplete="on"></form>
+
+            <label for="iprof">Profissāo</label>
+
+            <input type="text" name="prof" id="iprof" list="lstprof">
+
+            <datalist id="lstprof">
+            <option>Pedreiro</option>
+            <option>Borracheiro</option>
+            <option>Carpinteiro</option>
+            <option>Funileiro</option>
+            <option>Jardineiro</option>
+            <option>Bombeiro</option>
+            <option>Serralheiro</option>
+            <option>Cozinheiro</option>
+            <option>Goleiro</option>
+        </datalist>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        </div>
+
+    <p>
+            <label for="imsg">Mensagem</label> <br> 
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>      
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</body>
+</html>
