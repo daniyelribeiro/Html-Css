@@ -1,4 +1,93 @@
 @charset "UTF-8";
 
-/* versāo todas as demais midias /*
+/* versāo todas as demais midias */
+
+/* Typical Deice Breakpoint
+---------------------------
+Pq Telas:         até 600px
+Celular :    de 601 a 768px
+Tablet  :    de 768 a 992px
+Desktop :   de 992 a 1200px
+Gd Telas:   acima de 1200px
+*/
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg); /* desnecessário */
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: block;}
+    #pc {display: none;}
+    #tv {display: none;}
+    
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+    main::after {
+        content: 'Este texto foi impresso do site www.xxxxxxxxxxxx.com.br';
+        text-decoration: overline;
+    }
+    main h1 {
+        color: black;
+        text-shadow: none;
+    }
+}
+
+@media  screen and (min-width: 769px)and (max-width: 992px) {
+
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    main {
+        width: 500px;
+    }
+
+    #phone {display: none;}
+    #tablet {display: block;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px)  {
+
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    main {
+        width: 700px;
+    } 
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: block;}
+    #tv {display: none;}  
+}
+
+@media screen and (min-width: 1200px) {
+
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 900px;
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: block;}   
+}
 
