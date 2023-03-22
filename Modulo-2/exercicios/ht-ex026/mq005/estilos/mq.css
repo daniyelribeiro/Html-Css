@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* versāo todas as midias */
+
+/*  Typical Deice Breakpoint
+----------------------------
+Pq Telas:          até 600px
+Celular :     de 601 a 768px
+Tablet  :     de 769 a 992px
+Desktop :    de 993 a 1200px
+Gd Telas:    acima de 1200px
+*/
+
+@media screen and (min-width: 769px) {
+    #burguer {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    menu ul li {
+        display: inline-block;
+    }
+    main {
+        width: 700px;
+    }
+}
